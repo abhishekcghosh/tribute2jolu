@@ -1,0 +1,6 @@
+create table t2j_alumreg(aid bigint(9) not null primary key auto_increment, firstname varchar(100) not null, lastname varchar(100) not null, collegenick varchar(50), yearofpassing int(4) not null, department varchar(3) not null, dob datetime, gender varchar(6), presentcity varchar(100), presentcountry varchar(100), contactaddress varchar(1000), email1 varchar(256) not null unique, email2 varchar(256), phone1 varchar(20), phone2 varchar(20), presentindustry varchar(100), md5password VARCHAR(32) NOT NULL, siteprivilege VARCHAR(10) NOT NULL);
+
+create table t2j_alumcompanies(cid bigint(10) not null primary key auto_increment, alumemail1 varchar(256), companyname varchar(200), workedfrom varchar(4), workedto varchar(8));
+
+create table t2j_general(attribname varchar(64) not null, attribvalue varchar(64) not null);
+
